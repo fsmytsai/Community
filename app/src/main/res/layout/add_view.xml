@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+
+            <EditText
+                android:id="@+id/et_AddContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="top"
+
+                android:maxLines="3"
+                android:hint="發布貼文吧~"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_AddImage"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="-7dp"
+                android:layout_weight="1"
+                android:onClick="AddImage"
+                android:padding="0dp"
+                android:text="附圖片" />
+
+            <ImageView
+                android:id="@+id/iv_AddImage"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:padding="0dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-6dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_AddPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-7dp"
+                android:onClick="bt_AddPost"
+                android:padding="0dp"
+                android:text="送出" />
+        </LinearLayout>
+
+</LinearLayout>

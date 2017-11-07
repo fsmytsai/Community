@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tsai.community.ChatFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <view
+            android:id="@+id/rv_Chat"
+            class="android.support.v7.widget.RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink" />
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginBottom="2dp"-->
+        <!--android:layout_marginTop="2dp"-->
+        <!--android:background="#000" />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_ChatContent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:hint="開始聊天吧..."
+                android:maxLines="3"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/bt_SendChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="SendChat"
+                android:padding="0dp"
+                android:text="送出" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
